@@ -1,0 +1,18 @@
+{
+  "name": "atividade-produtos",
+  "version": "1.0.0",
+  "description": "Atividade de cadastro de produtos com login e sessão",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Seu Nome",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "cookie-parser": "^1.4.6",
+    "body-parser": "^1.20.3"
+  }
+}

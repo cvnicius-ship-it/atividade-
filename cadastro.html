@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Produto</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    input, button { padding: 8px; margin: 5px; }
+    table { width: 100%; border-collapse: collapse; }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Produto</h1>
+  <form action="/cadastro" method="POST">
+    <p>Código de Barras: <input type="text" name="codigoBarras" required></p>
+    <p>Descrição: <input type="text" name="descricao" required style="width:400px;"></p>
+    <p>Preço de Custo: <input type="number" step="0.01" name="precoCusto" required></p>
+    <p>Preço de Venda: <input type="number" step="0.01" name="precoVenda" required></p>
+    <p>Data de Validade: <input type="date" name="validade" required></p>
+    <p>Quantidade em Estoque: <input type="number" name="estoque" required></p>
+    <p>Fabricante: <input type="text" name="fabricante" required></p>
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+  <br>
+  <a href="/logout">Sair</a>
+</body>
+</html>
